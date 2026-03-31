@@ -11,7 +11,7 @@ import lombok.*;
 public class Pessoa {
 
 
-    private long id;
+    private Long id;
     private String nome;
     private String cpf;
     private String telefone;

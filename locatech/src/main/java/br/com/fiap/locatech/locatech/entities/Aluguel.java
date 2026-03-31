@@ -4,13 +4,16 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Auguel {
+
+public class Aluguel {
+
     private Long id;
     private Long pessoaId;
     private Long veiculoId;
@@ -20,5 +23,5 @@ public class Auguel {
     private String pessoaNome;
     private LocalDate dataInicio;
     private LocalDate dataFim;
-    private BigDecimal valorTota;
+    private BigDecimal valorTotal;
 }
