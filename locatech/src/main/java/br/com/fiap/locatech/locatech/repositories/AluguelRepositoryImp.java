@@ -66,6 +66,7 @@ public class AluguelRepositoryImp implements AluguelRepository{
     public Integer update(Aluguel aluguel, Long id) {
         return this.jdbcClient
                 .sql("UPDATE  alugueis  SET pessoa_id = :pessoa_id,  veiculo_id = :veiculo_id, data_inicio = :data_inicio, data_fim = :data_fim, valor_total =:valor_total  WHERE id =:id")
+                .param("id", id)
                 .param("pessoa_id", aluguel.getPessoaId())
                 .param("veiculo_id", aluguel.getVeiculoId())
                 .param("data_inicio", aluguel.getDataInicio())
